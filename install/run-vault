@@ -165,7 +165,6 @@ cluster_addr  = "https://$instance_ip_address:$cluster_port"
 api_addr      = "$api_addr"
 EOF
 )
-  fi
 
   vault_version_at_least "$config_path" "$ui_config"
 
