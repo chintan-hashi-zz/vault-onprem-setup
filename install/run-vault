@@ -85,7 +85,7 @@ function assert_not_empty {
 
 
 function get_instance_ip_address {
-  hostname -I
+  hostname -I | tr -d '[:space:]'
 }
 
 function assert_is_installed {
