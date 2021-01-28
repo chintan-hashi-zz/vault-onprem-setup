@@ -174,7 +174,7 @@ EOF
 
 #generating raft storage location
 
-  mkdir $RAFT_LOCATION_PATH
+  mkdir -p $RAFT_LOCATION_PATH
   chown "$user:$user" "$RAFT_LOCATION_PATH"
 
 }
@@ -416,7 +416,7 @@ function run {
         "$cluster_port" \
         "$api_addr" \
         "$config_dir" \
-        "$user"
+        "$user" \
         "$vault_node_id"
   fi
 
